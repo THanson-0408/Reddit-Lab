@@ -10,9 +10,13 @@
   <section class="post-container">
     <div *ngFor="let post of posts" class="post">
       <p class="post-text">{{ post.data.title }}</p>
-      <img src="{{ post.data.thumbnail }}" alt="" class="thumbnail" />
+      <img
+        src="{{ post.data.thumbnail }}"
+        alt="subreddit img"
+        class="thumbnail"
+      />
       <a href="{{ post.data.url }}" target="_blacnk" class="post-link"
-        >Found Here</a
+        >Click Me!</a
       >
     </div>
   </section>
